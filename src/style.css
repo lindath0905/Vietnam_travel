@@ -133,6 +133,7 @@ main p {
 
 .card {
   background: white;
+  padding: 40px 0;
   margin: 30px 0;
 }
 
@@ -143,6 +144,10 @@ main p {
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
+}
+
+.instagram-embed {
+    margin: 30px 0;
 }
 
 .card-body {
@@ -200,13 +205,16 @@ footer a {
   header {
     padding: 60px;
   }
+
   header h1 {
     font-size: 60px;
     line-height: 1.1;
   }
+
   header h2 {
     font-size: 30px;
   }
+
   header h3 {
     font-size: 18px;
   }
@@ -225,6 +233,6 @@ footer a {
   }
 
   .embed {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
   }
 }
