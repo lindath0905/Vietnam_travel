@@ -15,26 +15,40 @@ body {
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  grid-gap: 
 }
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
 }
+
+section.secondary {
+  background: #f8f8f8;
+}
+
+.text-center {
+  text-align: center;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-    url("../images/ninhbinh.jpg");
+    url("../images/ninhbinh_temple.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   color: white;
   padding: 220px 0;
-  border-radius: 5px;
 }
 
 header h1 {
@@ -93,14 +107,53 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+main h5 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13px;
+  line-height: 100%;
+}
+
 main p {
   opacity: 0.6;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.train-img {
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+.button {
+  background-color: #57469b;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 15px 40px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+img {
   max-width: 100%;
+  display: block;
 }
 
 footer {
@@ -144,7 +197,7 @@ footer a {
   header h3 {
     font-size: 18px;
   }
-  
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
